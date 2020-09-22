@@ -34,6 +34,8 @@ Encrypt key
 Maven release 
 - token scopse `public_repo`
 
+https://synyx.de/blog/using-travis-ci-to-deploy-to-maven-repositories-and-github-releases/
+https://blog.ham1.co.uk/2018/02/13/maven-release-plugin-for-github/
 
     <server>
         <id>github</id>
