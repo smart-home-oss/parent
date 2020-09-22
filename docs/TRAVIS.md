@@ -24,7 +24,9 @@ Add the the following Distribution Management section to your project’s pom.xm
 Login
 - https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token#creating-a-token
 - https://docs.travis-ci.com/user/github-oauth-scopes/
-- token scopes `read:org, repo:status, repo_deployment, user:email, write:repo_hook`
+    - Repositories on https://travis-ci **.COM** (Private and public) #
+    - https://docs.travis-ci.com/user/github-oauth-scopes/#travis-ci-for-private-projects
+- token scopes `read:org, repo, user:email, write:repo_hook`
 - `travis login --github-token xxxxxxxxxx`
 - if it fails try to re-sync https://travis-ci.org/account/preferences
 
