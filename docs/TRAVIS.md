@@ -45,6 +45,7 @@ Encrypt key
 - `travis encrypt --pro VCS_TOKEN="xxx" --add`
 - `travis encrypt --pro VCS_USERNAME="xxx" --add`
 
+`travis settings maximum_number_of_builds --set 1`
 
 Maven release 
 - token scopse `public_repo`
