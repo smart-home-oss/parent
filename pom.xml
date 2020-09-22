@@ -10,7 +10,7 @@
 
 	<groupId>lu.smarthome</groupId>
 	<artifactId>parent</artifactId>
-	<version>2.3.3.18-SNAPSHOT</version>
+	<version>2.3.3.19-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
