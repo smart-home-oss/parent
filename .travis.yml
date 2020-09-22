@@ -19,5 +19,5 @@ deploy:
   skip_cleanup: true
 script:
   - git checkout master
-  - mvn --batch-mode release:prepare -Prelease -DskipTests
-  - mvn --batch-mode release:perform -Prelease -DskipTests
+  - mvn --batch-mode -s .travis/settings.xml release:prepare -Prelease -DskipTests
+  - mvn --batch-mode -s .travis/settings.xml release:perform -Prelease -DskipTests
