@@ -13,4 +13,6 @@ deploy:
     secure: PZeMrVZYD5hbN+RZ0Bglx5FH4O7PCeVVPdITGN/5bUaxA/UA8kIC1qnPZTDtVWinkUGypZW6Oe5bzHqcd/K2B7lrQ9f3UwBXRgTpYiHhyk4JcR1rGduyhY57GlrkD/F4h6xF1MEj7+1gsvvfmvxY5naIjDuJggc+U8IJv8wCMWttvKUkSgDJHjTFZP0X/LPa8tcLLZzWlCPejNmj2qNcFO79f8xHYNe4nmanei2WlpXuhJT33TJgSnw4bdpQxHXFzjiZQzltCytvP9J3BUM2QJwGNpj40XVeStGlCQ7o+m5xZWCPlanoEHWCynGFd74qsxqHlpeHSBQAck6+8dhLJNqoatygTz5OBEY5ILcxCg3EmcHJss9N/m7fnXJvq1bfKxmsH4Ut1HNtk96REu6H3ySLFBj37V6OEoDag4iIP749rXKuMIZ+kcHPUJlsK/6fIsMjBtqDA/dnW5C0hWAfvlM/a01VQipmC4UzIChWNaWXrDD1oHapxtnznHTB4SOq/IQutmAN/ByaJ5+6B4xkWpZH5CnhYdNYWyo0uY2a3NzOplf5fxZlk9HY8r6p8LIsoknqLPdQ2Ezt862DKcAn0W6sMXOEMqlgY/hr3rZl+2YMmbs+jQYmVHEdyeIwV1SxLDAv5dgYqO7tlLciehIg6CFJbGsNxc3RKpUsKKJFX1c=
   skip_cleanup: true
 
-script: mvn --batch-mode release:prepare -Prelease -DskipTests
+script:
+  - mvn --batch-mode release:prepare -Prelease -DskipTests
+  - mvn --batch-mode release:perform -Prelease -DskipTests
