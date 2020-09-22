@@ -12,7 +12,6 @@
 	<artifactId>parent</artifactId>
 	<version>2.3.3.18-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>parent</name>
 
 	<properties>
 		<project.scm.id>github</project.scm.id>
