@@ -14,6 +14,8 @@
 	<name>parent</name>
 
 	<properties>
+		<project.scm.id>github</project.scm.id>
+
 		<sonar.projectKey>smart-home-oss_parent</sonar.projectKey>
 		<sonar.organization>smart-home-oss</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>

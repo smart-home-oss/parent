@@ -1,11 +1,10 @@
 language: java
 jdk: openjdk11
+
 cache:
   directories:
   - "$HOME/.m2"
-env:
-  global:
-  - secure: s67kGx2IO8mVjWzx+GIrt7bqisgZWi1r3pasOavxE27UuqmGxv+/U5xHkMy/Bp4LnO4DgbBJgDQklx370Rfcm38eBQ8fhgZrDJDpBqPk9Tr4nnty7eaN9ss5B7t25ADIcckWM8/xI0yvPh92WVvqdO08U0gHyDVSgg/VI7f25lHaVCuuc9S+dmHLeFW4bkKrqObaKfcJfY7Tv+mgZMtwCix3OIXtNEQtIL52InyUMPiEbpK2xDWdX0S0FLIT0PT83bX4K2E7OXGeZgpkf0p6/NYndklr6CM4DtZ2WgbsJTzUIbpP8ihBHGFZl3J0LjnMDZLyzNZ+rnoCwrMN1lcfiez7PFemWRffxGvk80pGjLJzkr+Vq2KDPNnEStCNM/EzeornW+Pu5jhdmy4ft8y1Tw0B2FI1kzM5mjNPQcjfe6ZaALqp1bsaLxBjE+8DVOhYRdMAqbehvmb7RkRW09kPt9i0wSozo+ymjYfl9r/37RR7UfIdBIrMPUUmM1lAVj8B6ypBGc0Uzkcy4AaUH5ayJ7+dNTlAKq/CSTDYDeCRnjCYAju0PMCFBacz2oMCI2Awu6L/eh1CuX/58fx6z+OCXV5UqyuTGPuGq7IXDchJ1Pxvm/UXpAKoGi50xRkKlG/P62vWshRxV8TDVh9glHh2cVuPADUUyuUlqfUQvw705uo=
+
 deploy:
   provider: bintray
   file: pom.xml
@@ -13,4 +12,5 @@ deploy:
   key:
     secure: PZeMrVZYD5hbN+RZ0Bglx5FH4O7PCeVVPdITGN/5bUaxA/UA8kIC1qnPZTDtVWinkUGypZW6Oe5bzHqcd/K2B7lrQ9f3UwBXRgTpYiHhyk4JcR1rGduyhY57GlrkD/F4h6xF1MEj7+1gsvvfmvxY5naIjDuJggc+U8IJv8wCMWttvKUkSgDJHjTFZP0X/LPa8tcLLZzWlCPejNmj2qNcFO79f8xHYNe4nmanei2WlpXuhJT33TJgSnw4bdpQxHXFzjiZQzltCytvP9J3BUM2QJwGNpj40XVeStGlCQ7o+m5xZWCPlanoEHWCynGFd74qsxqHlpeHSBQAck6+8dhLJNqoatygTz5OBEY5ILcxCg3EmcHJss9N/m7fnXJvq1bfKxmsH4Ut1HNtk96REu6H3ySLFBj37V6OEoDag4iIP749rXKuMIZ+kcHPUJlsK/6fIsMjBtqDA/dnW5C0hWAfvlM/a01VQipmC4UzIChWNaWXrDD1oHapxtnznHTB4SOq/IQutmAN/ByaJ5+6B4xkWpZH5CnhYdNYWyo0uY2a3NzOplf5fxZlk9HY8r6p8LIsoknqLPdQ2Ezt862DKcAn0W6sMXOEMqlgY/hr3rZl+2YMmbs+jQYmVHEdyeIwV1SxLDAv5dgYqO7tlLciehIg6CFJbGsNxc3RKpUsKKJFX1c=
   skip_cleanup: true
+
 script: mvn --batch-mode release:prepare -Prelease -DskipTests
