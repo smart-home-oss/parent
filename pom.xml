@@ -31,7 +31,23 @@
 		<maven-processor-plugin.version>3.3.3</maven-processor-plugin.version>
 		<jacoco-maven-plugin.version>0.8.5</jacoco-maven-plugin.version>
 		<maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
+		<maven-release-plugin.version>3.0.0-M1</maven-release-plugin.version>
 	</properties>
+
+	<distributionManagement>
+		<repository>
+			<id>bintray-smart-home-oss-maven</id>
+			<name>smart-home-oss-maven</name>
+			<url>https://api.bintray.com/maven/smart-home-oss/maven/parent/;publish=1</url>
+		</repository>
+	</distributionManagement>
+
+	<scm>
+		<connection>scm:git:https://github.com/smart-home-oss/parent.git</connection>
+		<url>hhttps://github.com/smart-home-oss/parent</url>
+		<developerConnection>scm:git:https://github.com/smart-home-oss/parent.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
 
 	<dependencies>
 		<dependency>
@@ -189,6 +205,11 @@
 						<exclude>**/*-local.properties</exclude>
 					</excludes>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>${maven-release-plugin.version}</version>
 			</plugin>
 		</plugins>
 	</build>
