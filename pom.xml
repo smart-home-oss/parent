@@ -7,9 +7,11 @@
 		<version>2.3.3.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>lu.smarthome</groupId>
 	<artifactId>parent</artifactId>
 	<version>2.3.3.3-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>parent</name>
 
 	<properties>
