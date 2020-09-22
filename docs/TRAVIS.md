@@ -30,6 +30,10 @@ Login
 - `travis login --github-token xxxxxxxxxx`
 - if it fails try to re-sync https://travis-ci.org/account/preferences
 
+
+`Failed to execute goal org.apache.maven.plugins:maven-release-plugin:3.0.0-M1:prepare (default-cli) on project parent: An error is occurred in the checkin process: Exception while executing SCM command. Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref`
+- https://git-scm.com/docs/git-config#Documentation/git-config.txt-coresymlinks
+
 Encrypt key
 - https://docs.travis-ci.com/user/deployment/bintray/
 

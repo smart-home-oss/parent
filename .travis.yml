@@ -10,6 +10,8 @@ env:
 branches:
   only:
     - master
+git:
+  symlinks: true
 deploy:
   provider: bintray
   file: pom.xml
