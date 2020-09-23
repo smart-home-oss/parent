@@ -6,3 +6,7 @@ Parent for the microservices.
 Version is synced to spring boot version, the 4th number is incremental and related to this project.
 
 The incrementation are adding new features, yet not so big.
+
+Spring boot 2.3.3
+
+Java 11
