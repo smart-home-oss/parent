@@ -50,7 +50,7 @@
 
 	<scm>
 		<connection>scm:git:https://github.com/smart-home-oss/parent.git</connection>
-		<url>hhttps://github.com/smart-home-oss/parent</url>
+		<url>https://github.com/smart-home-oss/parent</url>
 		<developerConnection>scm:git:https://github.com/smart-home-oss/parent.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
